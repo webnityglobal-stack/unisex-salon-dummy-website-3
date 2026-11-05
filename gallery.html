@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Lumière Salon & Wellness</title>
+  <meta name="description" content="Explore the Lumière salon gallery featuring hair styling, beauty treatments, men's grooming, bridal looks and salon interiors.">
+  <!-- Agar aapki CSS root folder mein hai, href="style.css" use karein.
+       Agar css folder ke andar hai, href="css/style.css" hi rakhein. -->
+  <link rel="stylesheet" href="style.css">
+  <script src="components.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<!-- 1. GALLERY HERO -->
+<section class="gallery-hero">
+  <div class="gallery-hero-bg"></div>
+  <div class="gallery-hero-shade"></div>
+  <div class="container gallery-hero-content">
+    <span class="eyebrow">THE LUMIÈRE COLLECTION</span>
+    <h1>Beauty In Every<br><em>Little Detail.</em></h1>
+    <p>
+      A visual journey through beautiful transformations, thoughtful
+      styling and the little moments that make every salon experience special.
+    </p>
+    <a href="#gallery-collection" class="btn gallery-gold-btn">Explore The Gallery</a>
+  </div>
+  <div class="gallery-hero-bottom">
+    <span>HAIR</span>
+    <span>BEAUTY</span>
+    <span>GROOMING</span>
+    <span>BRIDAL</span>
+  </div>
+</section>
+
+<!-- 2. INTRO -->
+<section class="section gallery-intro">
+  <div class="container gallery-intro-grid">
+    <div class="gallery-intro-image">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1100&q=85" alt="Elegant salon interior">
+      <span class="gallery-image-label">INSIDE LUMIÈRE</span>
+    </div>
+    <div class="gallery-intro-content">
+      <span class="eyebrow">A SPACE FOR BEAUTY & CREATIVITY</span>
+      <h2>Every Look Has<br><em>A Story To Tell.</em></h2>
+      <p>
+        Welcome to the Lumière gallery, where beauty, creativity and
+        personal style come together. Explore our visual inspiration
+        across hair, skincare, grooming and bridal styling.
+      </p>
+      <p>
+        From everyday elegance to special-occasion looks, discover the
+        details that make every transformation unique.
+      </p>
+      <a href="services.html" class="gallery-text-link">Explore Our Services ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. FEATURED COLLECTION -->
+<section class="gallery-featured-section">
+  <div class="container">
+    <div class="gallery-section-heading">
+      <span class="eyebrow">CURATED INSPIRATION</span>
+      <h2>Our Featured<br><em>Collections.</em></h2>
+      <p>Explore different sides of the Lumière beauty experience.</p>
+    </div>
+
+    <div class="gallery-featured-grid">
+      <a href="#gallery-collection" class="gallery-featured-card gallery-featured-large">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1100&q=85" alt="Women's hair styling inspiration">
+        <div class="gallery-featured-overlay">
+          <span>01 / HAIR STUDIO</span>
+          <h3>Hair & Styling</h3>
+          <p>Discover the art of beautiful hair.</p>
+        </div>
+      </a>
+
+      <a href="#gallery-collection" class="gallery-featured-card">
+        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=85" alt="Professional skincare beauty treatment">
+        <div class="gallery-featured-overlay">
+          <span>02 / BEAUTY STUDIO</span>
+          <h3>Skin & Beauty</h3>
+          <p>Moments of care and confidence.</p>
+        </div>
+      </a>
+
+      <a href="#gallery-collection" class="gallery-featured-card">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=85" alt="Professional men's barber haircut">
+        <div class="gallery-featured-overlay">
+          <span>03 / GROOMING</span>
+          <h3>Men's Style</h3>
+          <p>Sharp details and modern grooming.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 4. FILTERABLE GALLERY -->
+<section class="section gallery-collection-section" id="gallery-collection">
+  <div class="container">
+
+    <div class="gallery-collection-heading">
+      <div>
+        <span class="eyebrow">EXPLORE OUR WORK</span>
+        <h2>The Beauty Gallery</h2>
+        <p>Choose a collection and explore the visual inspiration.</p>
+      </div>
+      <span class="gallery-collection-count">THE LUMIÈRE EDIT</span>
+    </div>
+
+    <div class="filters gallery-filters">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="hair">Hair</button>
+      <button type="button" class="filter-btn" data-filter="beauty">Beauty</button>
+      <button type="button" class="filter-btn" data-filter="grooming">Grooming</button>
+      <button type="button" class="filter-btn" data-filter="bridal">Bridal</button>
+      <button type="button" class="filter-btn" data-filter="salon">Salon</button>
+    </div>
+
+    <div class="gallery-grid gallery-main-grid">
+
+      <img class="gallery-item" data-category="hair"
+        src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85"
+        alt="Professional hair styling">
+
+      <img class="gallery-item" data-category="beauty"
+        src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=900&q=85"
+        alt="Beauty makeup products and brushes">
+
+      <img class="gallery-item" data-category="grooming"
+        src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85"
+        alt="Premium men's barbershop">
+
+      <img class="gallery-item" data-category="hair"
+        src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=900&q=85"
+        alt="Hair salon styling inspiration">
+
+      <img class="gallery-item" data-category="bridal"
+        src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85"
+        alt="Bridal beauty makeup inspiration">
+
+      <img class="gallery-item" data-category="salon"
+        src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=85"
+        alt="Luxury beauty salon interior">
+
+      <img class="gallery-item" data-category="beauty"
+        src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85"
+        alt="Facial and skincare treatment">
+
+      <img class="gallery-item" data-category="grooming"
+        src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=85"
+        alt="Modern barber haircut">
+
+      <img class="gallery-item" data-category="bridal"
+        src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85"
+        alt="Wedding celebration inspiration">
+
+      <img class="gallery-item" data-category="hair"
+        src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=900&q=85"
+        alt="Women's hair transformation inspiration">
+
+      <img class="gallery-item" data-category="beauty"
+        src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85"
+        alt="Manicure and nail art">
+
+      <img class="gallery-item" data-category="salon"
+        src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85"
+        alt="Modern salon styling station">
+
+      <img class="gallery-item" data-category="bridal"
+        src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=900&q=85"
+        alt="Wedding bride inspiration">
+
+      <img class="gallery-item" data-category="grooming"
+        src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=85"
+        alt="Beard grooming and styling">
+
+      <img class="gallery-item" data-category="salon"
+        src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=900&q=85"
+        alt="Beautiful salon waiting area">
+
+    </div>
+
+    <p class="gallery-image-note">
+      Image references are for this website demo. Replace them with
+      your salon's actual work photos before publishing.
+    </p>
+  </div>
+</section>
+
+<!-- 5. HAIR COLLECTION BANNER -->
+<section class="gallery-story-section">
+  <div class="gallery-story-image">
+    <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1900&q=85" alt="Beautiful hair styling collection">
+  </div>
+  <div class="gallery-story-overlay"></div>
+  <div class="container gallery-story-content">
+    <span class="eyebrow">THE HAIR COLLECTION</span>
+    <h2>New Looks.<br><em>New Possibilities.</em></h2>
+    <p>From effortless everyday styling to statement transformations, discover inspiration for your next look.</p>
+    <a href="women-services.html" class="btn gallery-gold-btn">Explore Hair Services ↗</a>
+  </div>
+</section>
+
+<!-- 6. SALON INTERIOR -->
+<section class="gallery-interior-section">
+  <div class="container">
+    <div class="gallery-interior-grid">
+      <div class="gallery-interior-content">
+        <span class="eyebrow">THE LUMIÈRE SPACE</span>
+        <h2>A Beautiful Space<br><em>To Feel Your Best.</em></h2>
+        <p>
+          Your salon experience begins the moment you walk through
+          the door. Explore the atmosphere and details that make
+          Lumière a welcoming place for beauty and relaxation.
+        </p>
+        <a href="contact.html" class="gallery-text-link">Plan Your Visit ↗</a>
+      </div>
+
+      <div class="gallery-interior-photos">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85" alt="Salon reception and interior">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=85" alt="Salon styling area">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. BRIDAL COLLECTION -->
+<section class="gallery-bridal-section">
+  <div class="container gallery-bridal-grid">
+    <div class="gallery-bridal-photo">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1100&q=85" alt="Elegant beauty portrait">
+    </div>
+    <div class="gallery-bridal-content">
+      <span class="eyebrow">THE BRIDAL EDIT</span>
+      <h2>For Moments<br><em>That Last Forever.</em></h2>
+      <p>
+        A wedding look is more than styling. It is a reflection of
+        your personality, your celebration and your own beautiful story.
+      </p>
+      <p>
+        Explore bridal makeup, hairstyles and groom styling experiences
+        created for your most memorable occasions.
+      </p>
+      <a href="bridal.html" class="gallery-text-link">Discover Bridal Services ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. GROOMING COLLECTION -->
+<section class="gallery-grooming-section">
+  <div class="container">
+    <div class="gallery-grooming-heading">
+      <span class="eyebrow">THE GENTLEMAN'S EDIT</span>
+      <h2>Modern Grooming.<br><em>Timeless Confidence.</em></h2>
+      <p>Sharp haircuts, clean detailing and a style that feels like you.</p>
+    </div>
+
+    <div class="gallery-grooming-grid">
+      <div>
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=85" alt="Men's professional haircut">
+        <h3>Precision Haircuts</h3>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=85" alt="Professional beard grooming">
+        <h3>Beard Styling</h3>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85" alt="Modern men's barbershop">
+        <h3>The Grooming Studio</h3>
+      </div>
+    </div>
+    <div class="gallery-grooming-cta">
+      <a href="men-services.html" class="gallery-text-link">Explore Men's Services ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FINAL CTA -->
+<section class="gallery-final-cta">
+  <div class="gallery-final-watermark">L</div>
+  <div class="container gallery-final-content">
+    <span class="eyebrow">YOUR LOOK. YOUR STORY.</span>
+    <h2>Ready To Create<br><em>Your Own Beauty Story?</em></h2>
+    <p>Let our team help you find the right service for your next look.</p>
+    <a href="booking.html" class="btn gallery-gold-btn">Book Your Appointment ↗</a>
+    <div class="gallery-final-links">
+      <a href="services.html">Our Services</a>
+      <span>•</span>
+      <a href="contact.html">Contact Us</a>
+      <span>•</span>
+      <a href="about.html">About Lumière</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+</body>
+</html>
